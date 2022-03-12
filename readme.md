@@ -21,7 +21,7 @@
 #### 2、在spider下创建爬虫py文件（例如 yz:demo）
 #### 3、爬虫调用
 ```angular2html
-http://0.0.0.0:8001/fetch/?&spider=yz.demo
+http://0.0.0.0:6060/fetch/?&spider=yz.demo
 ```
 
 ## todo
