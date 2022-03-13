@@ -18,6 +18,9 @@
 
 
 #### 1、运行run.py文件
+``
+python3.7 run.py 6060
+``
 #### 2、在spider下创建爬虫py文件（例如 yz:demo）
 #### 3、爬虫调用
 ```angular2html
