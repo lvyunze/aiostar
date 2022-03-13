@@ -6,6 +6,7 @@ Desc : 启动文件
 """
 from sanic import Sanic
 import gc
+import sys
 import traceback
 from sanic.response import json
 import os
@@ -50,4 +51,4 @@ engine = BaseEngine({'work_num': 1024}, scheduler, app)
 app_config = {"REQUEST_TIMEOUT": 600, "RESPONSE_TIMEOUT": 600}
 
 app.update_config(app_config)
-app.run(host="0.0.0.0", port=6060)
+app.run(host="0.0.0.0", port=int(sys.argv[1]))
