@@ -8,3 +8,10 @@ Desc :
 Debug = False
 
 filter_host = "http://192.168.9.166:5000"
+
+
+class DatabaseConfig:
+    mongo_host = 'XXXX'
+    mongo_user = 'XXXX'
+    mongo_pwd = 'XXXXX'
+    mongo_database = 'XXXX'
