@@ -26,7 +26,7 @@ class Spider(BaseSpider):
 
     @retry(stop_max_attempt_number=10, wait_random_min=30000, wait_random_max=120000)
     async def fetch(self, client, url):
-        proxy = 'http://101.35.157.150:3128'
+        proxy = 'XXXXXX'
         async with client.get(url, proxy=proxy, headers=self.headers) as resp:
             text = await resp.text()
             print(url)
